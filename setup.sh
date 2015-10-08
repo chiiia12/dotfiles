@@ -1,3 +1,10 @@
+# install neoBundle
+mkdir -p ~/.vim/bundle
+git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+
+# setup vim
+  vim -s ./setup.vim
+
 # symlink
 if [ -f ~/.vimrc ]; then
 	rm ~/.vimrc
@@ -8,3 +15,4 @@ fi
 
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.vim ~/.vim:
