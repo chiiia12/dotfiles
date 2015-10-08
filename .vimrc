@@ -12,8 +12,7 @@ if has('vim_starting')
   endif
 
   call neobundle#begin(expand('~/.vim/bundle/'))
-  NeoBundleFetch 'Shogo/neobundle.vim'
-  call neobundle#end()
+	  NeoBundleFetch 'Shogo/neobundle.vim'
 
   filetype plugin indent on     " Required!
 
@@ -28,6 +27,7 @@ let g:user_emmet_leader_key='<c-t>'
 " molokai カラースキーム
 NeoBundle 'tomasr/molokai'
 
+call neobundle#end()
 
 set number
 syntax on
@@ -44,7 +44,8 @@ set hidden     " 保存されていないファイルがあるときでも別の
 set autoread   "外部でファイルに変更がされた場合は読みなおす
 set nobackup   " ファイル保存時にバックアップファイルを作らない
 set noswapfile " ファイル編集中にスワップファイルを作らない
-set iminsert=2 " インサートモードから抜けると自動的にIMEをオフにする
+set iminsert=0 " インサートモードから抜けると自動的にIMEをオフにする
+set imsearch=0
 set clipboard=unnamed,unnamedplus " OSのクリップボードをレジスタ指定無しで Yank, Put 出来るようにする
 
 
