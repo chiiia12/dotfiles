@@ -1,5 +1,5 @@
 # adb shellのパス通し
-export PATH=$PATH:/Users/yokoochiaki/Library/Android/sdk/platform-tools
+export PATH=$PATH:/Users/vv001292/Library/Android/sdk/platform-tools:
 
 # Sの情報を取得するzshの便利関数 vcs_infoを使う
 autoload -Uz vcs_info

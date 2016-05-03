@@ -1,4 +1,3 @@
-
 "Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
 
@@ -20,20 +19,27 @@ if has('vim_starting')
   " this will conveniently prompt you to install them.
 NeoBundleCheck
 NeoBundle 'mattn/emmet-vim'
-let g:user_emmet_leader_key='<c-t>'
 
+NeoBundle 'scrooloose/syntastic.git'
+NeoBundle 'Chiel92/vim-autoformat'
 
-" molokai カラースキーム
+" カラースキーム
 NeoBundle 'tomasr/molokai'
+NeoBundle 'vim-scripts/Lucius'
 
 call neobundle#end()
+
+" keymapping
+noremap <C-a> :Autoformat<CR>
+let g:user_emmet_leader_key='<c-t>'
 
 set number
 syntax on
 syntax on
 set nohlsearch
 set cursorline
-colorscheme molokai
+let g:lucius_style='dark'
+colorscheme Lucius 
 set imdisable
 
 
@@ -57,3 +63,8 @@ set history=10000
 "ビープ音すべてを無効にする
 set visualbell t_vb=
 set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
+
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
+
