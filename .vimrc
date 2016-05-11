@@ -8,12 +8,13 @@ filetype off                   " Required!
 
 if has('vim_starting')
 	  set runtimepath+=~/.vim/bundle/neobundle.vim/
-  endif
+	  set rtp+=~/.vim/bundle/Bundle.vim
+endif
 
-  call neobundle#begin(expand('~/.vim/bundle/'))
-	  NeoBundleFetch 'Shogo/neobundle.vim'
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shogo/neobundle.vim'
 
-  filetype plugin indent on     " Required!
+filetype plugin indent on     " Required!
 
 " If there are uninstalled bundles found on startup,
   " this will conveniently prompt you to install them.
@@ -23,7 +24,9 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'Chiel92/vim-autoformat'
 
-" カラースキーム
+" lifelog
+NeoBundle 'wakatime/vim-wakatime'
+
 NeoBundle 'tomasr/molokai'
 NeoBundle 'vim-scripts/Lucius'
 
