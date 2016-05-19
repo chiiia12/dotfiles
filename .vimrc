@@ -29,6 +29,7 @@ NeoBundle 'wakatime/vim-wakatime'
 
 NeoBundle 'tomasr/molokai'
 NeoBundle 'vim-scripts/Lucius'
+NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 
