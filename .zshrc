@@ -1,10 +1,17 @@
 # adb shellのパス通し
 export PATH=$PATH:/Users/vv001292/Library/Android/sdk/platform-tools:
-
+export M2_HOME=~/Documents/project/development/apps/maven/apache-maven-2.2.1
+export PATH=$PATH:$M2_HOME/bin
+[[ -d ~/.rbenv  ]] && \
+export PATH=${HOME}/.rbenv/bin:${PATH} && \
+eval "$(rbenv init -)"
 # Sの情報を取得するzshの便利関数 vcs_infoを使う
 autoload -Uz vcs_info
 
-PS1="%{$fg[cyan]%}[${USER}@${HOST%%.*} %1~]%(!.#.$)${reset_color} "
+#PS1="%{$fg[green]%}%m%(!.#.$) %{$reset_color%}"
+autoload colors
+colors
+PROMPT="%{$fg[cyan]%}[vv001292@CA1306 %1~]%(!.#.$) %{$reset_color%}"
 
 # 表示フォーマットの指定
 # %b ブランチ情報
