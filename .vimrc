@@ -34,7 +34,8 @@ NeoBundle 'scrooloose/nerdtree'
 call neobundle#end()
 
 " keymapping
-noremap <C-a> :Autoformat<CR>
+noremap <D-¬> :Autoformat<CR>
+noremap <D-1> :NERDTree<CR>
 let g:user_emmet_leader_key='<c-t>'
 
 set number
@@ -43,7 +44,7 @@ syntax on
 set nohlsearch
 set cursorline
 let g:lucius_style='dark'
-colorscheme Lucius 
+colorscheme lucius 
 set imdisable
 
 

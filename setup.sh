@@ -27,6 +27,9 @@ ln -s ~/dotfiles/.vim ~/.vim:
 brew install zsh
 chsh -s /usr/local/bin/zsh
 
+# git config editorの設定
+git config --global core.editor vim
+
 # Google IME
 brew cask install google-japanese-ime
 # tig
