@@ -66,4 +66,9 @@ setopt hist_ignore_all_dups
 # ^R で履歴検索をするときに * でワイルドカードを使用出来るようにする
 bindkey '^R' history-incremental-pattern-search-backward
 
+#　エイリアス
+
+alias la='ls -a'
+alias ll='ls -l'
+
 [[ -s "/Users/vv001292/.gvm/scripts/gvm" ]] && source "/Users/vv001292/.gvm/scripts/gvm"
