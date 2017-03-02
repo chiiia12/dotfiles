@@ -1,5 +1,5 @@
 # adb shellのパス通し
-export PATH=$PATH:/Users/vv001292/Library/Android/sdk/platform-tools:$HOME/go/third-party:$HOME/go/my-project
+export PATH=$PATH:/Users/vv001292/Library/Android/sdk/platform-tools
 export M2_HOME=~/Documents/project/development/apps/maven/apache-maven-2.2.1
 export PATH=$PATH:$M2_HOME/bin
 export STORE_PASSWORD=R8cBqF7yvian
@@ -8,9 +8,12 @@ export KEY_PASSWORD=3QBG4JqugbHL
 export ANDROID_HOME=/Users/vv001292/Library/Android/sdk
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
 [[ -d ~/.rbenv  ]] && \
-export PATH=${HOME}/.rbenv/bin:${PATH} && \
-export GOPATH=$HOME/go/third-party:$HOME/go/my-project
-
+export PATH=${HOME}/.rbenv/bin:::${PATH} && \
+export EDITOR='vim'
+eval "$(direnv hook zsh)"
+export GOROOT=""
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin
 eval "$(rbenv init -)"
 # Sの情報を取得するzshの便利関数 vcs_infoを使う
 autoload -Uz vcs_info
@@ -52,3 +55,15 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
 # ps コマンドのプロセス名補完
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
+# ディレクトリ名だけでcdする
+setopt auto_cd
+
+# 同時に起動したzshの間でヒストリを共有する
+setopt share_history
+
+# 同じコマンドをヒストリに残さない
+setopt hist_ignore_all_dups
+# ^R で履歴検索をするときに * でワイルドカードを使用出来るようにする
+bindkey '^R' history-incremental-pattern-search-backward
+
+[[ -s "/Users/vv001292/.gvm/scripts/gvm" ]] && source "/Users/vv001292/.gvm/scripts/gvm"

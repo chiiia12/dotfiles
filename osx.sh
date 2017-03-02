@@ -56,6 +56,8 @@ defaults write -g AppleShowAllExtensions -bool true
 # Show Path bar in Finder （パスバーを表示）
 defaults write com.apple.finder ShowPathbar -bool true
 
+# 写真アプリ自動openをOFF
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 
 
 # restart
