@@ -71,8 +71,9 @@ bindkey '^R' history-incremental-pattern-search-backward
 alias la='ls -a'
 alias ll='ls -l'
 alias st= 'tig status'
-alias pull = 'git pull'
-alias push = 'git push'
-alias co = 'git checkout'
+alias pull='git pull'
+alias push='git push'
+alias co='git checkout'
+alias tree='tree -L 2'
 
 [[ -s "/Users/vv001292/.gvm/scripts/gvm" ]] && source "/Users/vv001292/.gvm/scripts/gvm"
