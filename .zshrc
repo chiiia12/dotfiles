@@ -71,7 +71,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 alias la='ls -a'
 alias ll='ls -l'
 alias st= 'tig status'
-alias pull='git pull'
+alias pull='git pull origin'
 alias push='git push'
 alias co='git checkout'
 alias tree='tree -L 2'
