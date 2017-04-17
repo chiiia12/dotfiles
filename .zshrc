@@ -2,6 +2,9 @@
 export PATH=$PATH:/Users/vv001292/Library/Android/sdk/platform-tools
 export M2_HOME=~/Documents/project/development/apps/maven/apache-maven-2.2.1
 export PATH=$PATH:$M2_HOME/bin
+export M3_HOME=/usr/local/apache-maven-3.5.0
+export M3=$M3_HOME/bin
+export PATH=$PATH:$M3_HOME/bin
 export STORE_PASSWORD=R8cBqF7yvian
 export KEY_ALIAS=service_safari
 export KEY_PASSWORD=3QBG4JqugbHL
@@ -77,3 +80,7 @@ alias co='git checkout'
 alias tree='tree -L 2'
 
 [[ -s "/Users/vv001292/.gvm/scripts/gvm" ]] && source "/Users/vv001292/.gvm/scripts/gvm"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/vv001292/.sdkman"
+[[ -s "/Users/vv001292/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vv001292/.sdkman/bin/sdkman-init.sh"
