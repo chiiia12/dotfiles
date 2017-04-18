@@ -1,6 +1,6 @@
-# adb shellのパス通し
+
 export PATH=$PATH:/Users/vv001292/Library/Android/sdk/platform-tools
-export M2_HOME=~/Documents/project/development/apps/maven/apache-maven-2.2.1
+export M2_HOME=/usr/local/apache-maven-3.5.0
 export PATH=$PATH:$M2_HOME/bin
 export M3_HOME=/usr/local/apache-maven-3.5.0
 export M3=$M3_HOME/bin
@@ -17,14 +17,22 @@ eval "$(direnv hook zsh)"
 export GOROOT=""
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin
+export LSCOLORS=gxfxcxdxbxegedabagacad
 eval "$(rbenv init -)"
 # Sの情報を取得するzshの便利関数 vcs_infoを使う
 autoload -Uz vcs_info
 
-#PS1="%{$fg[green]%}%m%(!.#.$) %{$reset_color%}"
-autoload colors
-colors
-PROMPT="%{$fg[cyan]%}[vv001292@CA1306 %1~]%(!.#.$) %{$reset_color%}"
+# プロンプトのカラー
+autoload -U promptinit
+promptinit
+prompt adam1
+
+# ls
+export LSCOLORS=exfxcxdxbxegedabagacad
+
+# 補完候補もLS_COLORSに合わせて色が付くようにする
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
 
 # 表示フォーマットの指定
 # %b ブランチ情報
@@ -72,7 +80,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 #　エイリアス
 
 alias la='ls -a'
-alias ll='ls -l'
+alias ll='ls -l -G'
 alias st= 'tig status'
 alias pull='git pull origin'
 alias push='git push'
