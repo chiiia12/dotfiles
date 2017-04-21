@@ -79,7 +79,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 #　エイリアス
 
-alias la='ls -a'
+alias la='ls -a -G'
 alias ll='ls -l -G'
 alias st= 'tig status'
 alias pull='git pull origin'
