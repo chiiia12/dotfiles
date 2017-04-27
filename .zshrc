@@ -1,7 +1,5 @@
 
 export PATH=$PATH:/Users/vv001292/Library/Android/sdk/platform-tools
-export M2_HOME=/usr/local/apache-maven-3.5.0
-export PATH=$PATH:$M2_HOME/bin
 export M3_HOME=/usr/local/apache-maven-3.5.0
 export M3=$M3_HOME/bin
 export PATH=$PATH:$M3_HOME/bin
@@ -9,7 +7,7 @@ export STORE_PASSWORD=R8cBqF7yvian
 export KEY_ALIAS=service_safari
 export KEY_PASSWORD=3QBG4JqugbHL
 export ANDROID_HOME=/Users/vv001292/Library/Android/sdk
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 [[ -d ~/.rbenv  ]] && \
 export PATH=${HOME}/.rbenv/bin:::${PATH} && \
 export EDITOR='vim'
