@@ -42,9 +42,15 @@ brew cask install java
 brew cask install android-studio
 brew cask install iterm2
 brew cask install bettertouchtool
+brew install npm
 
+brew install git
 brew install ansible
 brew cask install virtualbox
 brew cask install vagrant
-brew install maven@3.1
+brew install maven
+brew cask install caffeine
+brew cask install xtrafinder
+brew cask install karabiner
+brew cask install android-studio
 
