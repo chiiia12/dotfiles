@@ -1,21 +1,6 @@
-
-export PATH=$PATH:/Users/vv001292/Library/Android/sdk/platform-tools
-export M3_HOME=/usr/local/apache-maven-3.5.0
-export M3=$M3_HOME/bin
-export PATH=$PATH:$M3_HOME/bin
-export STORE_PASSWORD=R8cBqF7yvian
-export KEY_ALIAS=service_safari
-export KEY_PASSWORD=3QBG4JqugbHL
-export ANDROID_HOME=/Users/vv001292/Library/Android/sdk
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
+bindkey -v
 [[ -d ~/.rbenv  ]] && \
-export PATH=${HOME}/.rbenv/bin:::${PATH} && \
-export EDITOR='vim'
 eval "$(direnv hook zsh)"
-export GOROOT=""
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin
-export LSCOLORS=gxfxcxdxbxegedabagacad
 eval "$(rbenv init -)"
 # Sの情報を取得するzshの便利関数 vcs_infoを使う
 autoload -Uz vcs_info
