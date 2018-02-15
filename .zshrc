@@ -75,3 +75,10 @@ alias tree='tree -L 2'
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/vv001292/.sdkman"
 [[ -s "/Users/vv001292/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vv001292/.sdkman/bin/sdkman-init.sh"
+
+#=============================
+## source zsh-syntax-highlighting
+##=============================
+if [ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+  source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
