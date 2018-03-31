@@ -54,3 +54,5 @@ brew cask install xtrafinder
 brew cask install karabiner
 brew cask install android-studio
 
+# setting osx
+sh ./osx.sh
