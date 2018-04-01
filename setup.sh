@@ -42,6 +42,9 @@ brew cask install java
 brew cask install android-studio
 brew cask install iterm2
 brew cask install bettertouchtool
+brew cask install slack
+brew cask install hyperswitch
+brew cask install alfred
 brew install npm
 
 brew install git
@@ -56,3 +59,14 @@ brew cask install android-studio
 
 # setting osx
 sh ./osx.sh
+
+# open app
+open -a "/Applications/Google Chrome.app/"
+open -a "/Applications/Caffeine.app/"
+open -a "/Applications/BetterTouchTool.app/"
+open -a "/Applications/iTerm.app"
+open -a "/Applications/Slack.app"
+open -a "/Applications/Alfred\ 3.app/"
+open -a "/Applications/HyperSwitch.app"
+
+
