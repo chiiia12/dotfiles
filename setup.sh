@@ -56,6 +56,8 @@ brew cask install caffeine
 brew cask install xtrafinder
 brew cask install karabiner
 brew cask install android-studio
+brew install watchman
+brew install -g react-native-cli
 
 # setting osx
 sh ./osx.sh
