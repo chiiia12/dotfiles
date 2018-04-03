@@ -58,6 +58,7 @@ brew cask install karabiner
 brew cask install android-studio
 brew install watchman
 brew install -g react-native-cli
+brew install mas
 
 # setting osx
 sh ./osx.sh
