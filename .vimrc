@@ -24,9 +24,6 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'Chiel92/vim-autoformat'
 
-" lifelog
-NeoBundle 'wakatime/vim-wakatime'
-
 NeoBundle 'tomasr/molokai'
 NeoBundle 'vim-scripts/Lucius'
 NeoBundle 'scrooloose/nerdtree'
