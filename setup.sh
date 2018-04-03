@@ -59,6 +59,7 @@ brew cask install android-studio
 brew install watchman
 brew install -g react-native-cli
 brew install mas
+brew cask install bartender
 
 # setting osx
 sh ./osx.sh
