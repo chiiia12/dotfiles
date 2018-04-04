@@ -46,6 +46,7 @@ apps=(
  karabiner
  android-studio
  bartender
+ istat-menus
 )
 
 
