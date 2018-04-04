@@ -4,9 +4,9 @@ git config --global core.editor vim
 #langag
 defaults write -g AppleLanguages -array en ja
 #Click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true 
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true 
+#defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+#defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 #scroll
 defaults write -g com.apple.swipescrolldirection -bool false
 
