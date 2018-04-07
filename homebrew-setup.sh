@@ -47,14 +47,20 @@ apps=(
  android-studio
  bartender
  istat-menus
+ react-native-debugger
 )
 
 
 echo "Installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
+npmmodules=(
+ react-native-cli
+ react-devtools
+ react-native-git-upgrade
+)
 echo "Install npm modules..."
-npm install -g react-native-cli
+npm install -g ${npmmodules[@]} 
 
 storeapps=(
 457622435 # Yoink
@@ -69,3 +75,5 @@ mas install ${storeapps[@]}
 
 brew cleanup
 brew cask cleanup
+
+sudo gem install cocoapods
