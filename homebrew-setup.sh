@@ -48,6 +48,7 @@ apps=(
  bartender
  istat-menus
  react-native-debugger
+ clipy
 )
 
 
