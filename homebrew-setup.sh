@@ -50,7 +50,6 @@ apps=(
  react-native-debugger
  clipy
  goland
- intellij-idea-ce
  jasper
 )
 
