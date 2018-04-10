@@ -49,6 +49,8 @@ apps=(
  istat-menus
  react-native-debugger
  clipy
+ goland
+ intellij-idea-ce
 )
 
 
