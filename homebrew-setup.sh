@@ -25,6 +25,7 @@ watchman
 mas
 nvm
 yarn
+go
 )
 
 echo "Installing binaries..."
