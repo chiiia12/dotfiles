@@ -51,6 +51,7 @@ apps=(
  clipy
  goland
  intellij-idea-ce
+ jasper
 )
 
 
