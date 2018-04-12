@@ -26,6 +26,7 @@ mas
 nvm
 yarn
 go
+git-now
 )
 
 echo "Installing binaries..."
