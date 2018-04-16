@@ -53,6 +53,7 @@ apps=(
  clipy
  goland
  jasper
+ skype
 )
 
 
