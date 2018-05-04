@@ -27,6 +27,7 @@ nvm
 yarn
 go
 git-now
+gradle
 )
 
 echo "Installing binaries..."
