@@ -30,37 +30,6 @@ chsh -s /usr/local/bin/zsh
 # git config editorの設定
 git config --global core.editor vim
 
-# Google IME
-brew cask install google-japanese-ime
-# tig
-brew install tig
-# clang-format
-brew install clang-format
-brew tap caskroom/eask
-brew cask install google-chrome
-brew cask install java
-brew cask install android-studio
-brew cask install iterm2
-brew cask install bettertouchtool
-brew cask install slack
-brew cask install hyperswitch
-brew cask install alfred
-brew install npm
-
-brew install git
-brew install ansible
-brew cask install virtualbox
-brew cask install vagrant
-brew install maven
-brew cask install caffeine
-brew cask install xtrafinder
-brew cask install karabiner
-brew cask install android-studio
-brew install watchman
-brew install -g react-native-cli
-brew install mas
-brew cask install bartender
-
 # setting osx
 sh ./osx.sh
 

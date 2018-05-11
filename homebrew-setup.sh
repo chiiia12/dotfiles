@@ -28,6 +28,7 @@ yarn
 go
 git-now
 gradle
+swiftlint
 )
 
 echo "Installing binaries..."
@@ -84,4 +85,7 @@ mas install ${storeapps[@]}
 brew cleanup
 brew cask cleanup
 
+curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
 sudo gem install cocoapods
+sudo gem install update_xcode_plugins
+update_xcode_plugins
