@@ -20,6 +20,7 @@ fi
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.vim ~/.vim:
+ln -s ~/dotfiles/.tigrc ~/.tigrc
 
 # login shell
 # TODO unknown userと言われる
