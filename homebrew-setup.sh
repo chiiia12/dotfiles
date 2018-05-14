@@ -56,6 +56,8 @@ apps=(
  goland
  jasper
  skype
+ docker
+ 1password
 )
 
 
