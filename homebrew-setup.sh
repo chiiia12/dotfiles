@@ -58,6 +58,7 @@ apps=(
  skype
  docker
  1password
+ licecap
 )
 
 
