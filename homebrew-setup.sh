@@ -29,6 +29,7 @@ go
 git-now
 gradle
 swiftlint
+postgress
 )
 
 echo "Installing binaries..."
@@ -59,6 +60,7 @@ apps=(
  docker
  1password
  licecap
+ atom
 )
 
 
@@ -89,6 +91,11 @@ brew cleanup
 brew cask cleanup
 
 curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
-sudo gem install cocoapods
-sudo gem install update_xcode_plugins
+gemapps=(
+cocoapods
+update_xcode_plugins
+rails
+spec
+)
+gem install ${gemapps[@]}
 update_xcode_plugins
