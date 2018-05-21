@@ -29,7 +29,8 @@ go
 git-now
 gradle
 swiftlint
-postgress
+postgresql
+mongodb
 )
 
 echo "Installing binaries..."
