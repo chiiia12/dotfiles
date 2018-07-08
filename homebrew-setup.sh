@@ -32,7 +32,8 @@ swiftlint
 postgresql
 mongodb
 ios-deploy
-libimobiledevice
+--HEAD libimobiledevice
+ideviceinstaller
 )
 
 echo "Installing binaries..."
