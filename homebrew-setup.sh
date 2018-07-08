@@ -31,6 +31,8 @@ gradle
 swiftlint
 postgresql
 mongodb
+ios-deploy
+libimobiledevice
 )
 
 echo "Installing binaries..."
@@ -76,17 +78,6 @@ npmmodules=(
 echo "Install npm modules..."
 npm install -g ${npmmodules[@]} 
 
-storeapps=(
-457622435 # Yoink
-497799835 # XCode
-866773894 # Quiver
-539883307 # Line
-1013897218 # App Cleaner
-)
-
-echo "Installing store apps..."
-mas upgrade
-mas install ${storeapps[@]}
 
 brew cleanup
 brew cask cleanup
@@ -100,3 +91,6 @@ spec
 )
 gem install ${gemapps[@]}
 update_xcode_plugins
+
+# for flutter
+pip install six
