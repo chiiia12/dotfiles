@@ -34,6 +34,7 @@ mongodb
 ios-deploy
 --HEAD libimobiledevice
 ideviceinstaller
+gnupg
 )
 
 echo "Installing binaries..."
