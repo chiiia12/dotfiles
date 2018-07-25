@@ -35,6 +35,8 @@ ios-deploy
 --HEAD libimobiledevice
 ideviceinstaller
 gnupg
+gpg-agent
+pinentry-mac
 )
 
 echo "Installing binaries..."
