@@ -30,13 +30,13 @@ git-now
 gradle
 swiftlint
 postgresql
-mongodb
 ios-deploy
 --HEAD libimobiledevice
 ideviceinstaller
 gnupg
 gpg-agent
 pinentry-mac
+nodebrew
 )
 
 echo "Installing binaries..."
@@ -78,6 +78,7 @@ npmmodules=(
  react-native-cli
  react-devtools
  react-native-git-upgrade
+ puppeteer
 )
 echo "Install npm modules..."
 npm install -g ${npmmodules[@]} 
