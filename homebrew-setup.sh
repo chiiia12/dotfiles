@@ -73,6 +73,8 @@ docker
 licecap
 atom
 intellij-idea-ce
+eqmac
+quiver
 )
 
 
