@@ -38,6 +38,7 @@ ios-deploy
 --HEAD libimobiledevice
 ideviceinstaller
 pinentry-mac
+quiver
 )
 
 echo "Installing binaries..."
@@ -74,7 +75,7 @@ licecap
 atom
 intellij-idea-ce
 eqmac
-quiver
+visual-studio-code
 )
 
 
