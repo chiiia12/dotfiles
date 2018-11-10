@@ -20,7 +20,6 @@ clang-format
 npm
 git
 ansible
-maven
 watchman
 mas
 nvm
@@ -36,7 +35,7 @@ ideviceinstaller
 gnupg
 gpg-agent
 pinentry-mac
-nodebrew
+maven
 )
 
 echo "Installing binaries..."
@@ -79,6 +78,7 @@ npmmodules=(
  react-devtools
  react-native-git-upgrade
  puppeteer
+ create-react-app
 )
 echo "Install npm modules..."
 npm install -g ${npmmodules[@]} 
@@ -99,3 +99,6 @@ update_xcode_plugins
 
 # for flutter
 pip install six
+
+# install nodebrew
+curl https://raw.github.com/hokaccha/nodebrew/master/nodebrew | perl - setup
