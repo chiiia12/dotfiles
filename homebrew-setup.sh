@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # brew install
 if test ! $(which brew); then
 	echo "Installing homebrew..."
@@ -12,6 +13,8 @@ echo "Updating existing binaries"
 brew upgrade
 
 brew tap caskroom/cask
+brew tap homebrew/cask
+brew cask install java
 
 binaries=(
 zsh
@@ -32,46 +35,54 @@ postgresql
 ios-deploy
 --HEAD libimobiledevice
 ideviceinstaller
-gnupg
-gpg-agent
 pinentry-mac
 maven
+quiver
 )
 
 echo "Installing binaries..."
-brew install ${binaries[@]}
+for ((i = 0; i < ${#binaries[@]}; i++)) {
+  echo "Install ${binaries[i]}"
+  brew install ${binaries[i]}
+}
 
 apps=(
- google-japanese-ime
- google-chrome
- java
- android-studio
- iterm2
- bettertouchtool
- slack
- hyperswitch
- alfred
- virtualbox
- vagrant
- caffeine
- karabiner
- android-studio
- bartender
- istat-menus
- react-native-debugger
- clipy
- goland
- jasper
- skype
- docker
- 1password
- licecap
- atom
+google-japanese-ime
+google-chrome
+java
+android-studio
+iterm2
+bettertouchtool
+slack
+hyperswitch
+alfred
+virtualbox
+vagrant
+caffeine
+karabiner
+android-studio
+bartender
+istat-menus
+react-native-debugger
+clipy
+goland
+jasper
+skype
+docker
+1password
+licecap
+atom
+intellij-idea-ce
+eqmac
+visual-studio-code
 )
 
 
 echo "Installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
+for ((i = 0; i < ${#apps[@]}; i++)) {
+  echo "Install ${aps[i]}"
+  brew cask install --appdir="/Applications" ${apps[i]}
+}
 
 npmmodules=(
  react-native-cli
@@ -80,12 +91,14 @@ npmmodules=(
  puppeteer
  create-react-app
 )
-echo "Install npm modules..."
-npm install -g ${npmmodules[@]} 
 
+echo "Install npm modules..."
+for ((i = 0; i < ${#npmmodules[@]}; i++)) {
+  echo "Install ${aps[i]}"
+  npm install -g ${npmmodules[i]} 
+}
 
 brew cleanup
-brew cask cleanup
 
 curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
 gemapps=(
@@ -94,7 +107,11 @@ update_xcode_plugins
 rails
 spec
 )
-gem install ${gemapps[@]}
+
+for ((i = 0; i < ${#gemapps[@]}; i++)) {
+   gem install ${gemapps[i]}
+}
+
 update_xcode_plugins
 
 # for flutter
