@@ -89,6 +89,7 @@ npmmodules=(
  react-native-cli
  react-devtools
  react-native-git-upgrade
+ react-scripts
 )
 
 echo "Install npm modules..."
