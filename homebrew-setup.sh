@@ -91,6 +91,7 @@ npmmodules=(
  react-scripts
  puppeteer
  create-react-app
+ typescript
 )
 
 echo "Install npm modules..."
