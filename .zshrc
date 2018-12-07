@@ -11,7 +11,7 @@ promptinit
 prompt adam1
 
 # ls
-export LSCOLORS=exfxcxdxbxegedabagacad
+export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # 補完候補もLS_COLORSに合わせて色が付くようにする
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
@@ -70,12 +70,6 @@ alias push='git push'
 alias co='git checkout'
 alias tree='tree -L 2'
 
-[[ -s "/Users/vv001292/.gvm/scripts/gvm" ]] && source "/Users/vv001292/.gvm/scripts/gvm"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/vv001292/.sdkman"
-[[ -s "/Users/vv001292/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vv001292/.sdkman/bin/sdkman-init.sh"
-
 #=============================
 ## source zsh-syntax-highlighting
 ##=============================
@@ -88,3 +82,7 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 setopt hist_ignore_dups
 setopt EXTENDED_HISTORY
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
