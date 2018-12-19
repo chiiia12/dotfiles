@@ -38,6 +38,7 @@ ideviceinstaller
 pinentry-mac
 maven
 quiver
+rbenv
 )
 
 echo "Installing binaries..."
