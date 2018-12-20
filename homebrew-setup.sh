@@ -39,6 +39,7 @@ pinentry-mac
 maven
 quiver
 rbenv
+zsh-kubectl-prompt
 )
 
 echo "Installing binaries..."
