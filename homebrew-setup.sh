@@ -112,7 +112,7 @@ spec
 )
 
 for ((i = 0; i < ${#gemapps[@]}; i++)) {
-   gem install ${gemapps[i]}
+   sudo gem install ${gemapps[i]}
 }
 
 update_xcode_plugins
