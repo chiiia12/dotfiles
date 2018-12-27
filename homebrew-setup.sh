@@ -18,6 +18,7 @@ brew cask install java
 
 binaries=(
 zsh
+zplug
 tig
 clang-format
 npm
