@@ -77,6 +77,7 @@ atom
 intellij-idea-ce
 eqmac
 visual-studio-code
+reactotron
 )
 
 
