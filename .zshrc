@@ -69,6 +69,7 @@ alias pull='git pull origin'
 alias push='git push'
 alias co='git checkout'
 alias tree='tree -L 2'
+alias grh='git reset --hard'
 
 #=============================
 ## source zsh-syntax-highlighting
