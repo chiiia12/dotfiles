@@ -40,6 +40,7 @@ pinentry-mac
 maven
 quiver
 rbenv
+mysql
 )
 
 echo "Installing binaries..."
