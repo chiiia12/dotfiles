@@ -41,6 +41,7 @@ maven
 quiver
 rbenv
 mysql
+source-highlight
 )
 
 echo "Installing binaries..."
