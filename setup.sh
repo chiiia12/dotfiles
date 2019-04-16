@@ -15,12 +15,16 @@ fi
 if [ -f ~/.zshrc ]; then
 	rm ~/.zshrc
 fi
+if [ -f ~/.ideavimrc ]; then
+	rm ~/.ideavimrc
+fi
 
 # symbolic link
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.vim ~/.vim:
 ln -s ~/dotfiles/.tigrc ~/.tigrc
+ln -s ~/dotfiles/.ideavimrc ~/.ideavimrc
 
 # login shell
 # TODO unknown userと言われる
