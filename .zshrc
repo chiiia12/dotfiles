@@ -63,7 +63,7 @@ setopt hist_ignore_all_dups
 # ^R で履歴検索をするときに * でワイルドカードを使用出来るようにする
 bindkey '^R' history-incremental-pattern-search-backward
 
-#　エイリアス
+# Alias　
 
 alias la='ls -a -G'
 alias ll='ls -l -G'
@@ -72,6 +72,7 @@ alias pull='git pull origin'
 alias push='git push'
 alias co='git checkout'
 alias tree='tree -L 2'
+alias grh='git reset --hard'
 
 #=============================
 ## source zsh-syntax-highlighting
@@ -89,3 +90,13 @@ setopt EXTENDED_HISTORY
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+## LESS setting
+export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+export LESS=" -R "
+
+function git-root() {
+  if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    cd `pwd`/`git rev-parse --show-cdup`
+  fi
+}

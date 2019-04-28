@@ -18,6 +18,7 @@ brew cask install java
 
 binaries=(
 zsh
+zplug
 tig
 clang-format
 npm
@@ -40,6 +41,8 @@ maven
 quiver
 rbenv
 zsh-kubectl-prompt
+mysql
+source-highlight
 )
 
 echo "Installing binaries..."
@@ -77,6 +80,7 @@ atom
 intellij-idea-ce
 eqmac
 visual-studio-code
+reactotron
 )
 
 
@@ -113,7 +117,7 @@ spec
 )
 
 for ((i = 0; i < ${#gemapps[@]}; i++)) {
-   gem install ${gemapps[i]}
+   sudo gem install ${gemapps[i]}
 }
 
 update_xcode_plugins
