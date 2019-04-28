@@ -101,4 +101,3 @@ function git-root() {
   fi
 }
 
-git config --global alias.delete-merged-branches '!git branch --merged | grep -v \* | xargs -I % git branch -d %'
