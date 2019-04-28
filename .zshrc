@@ -100,3 +100,5 @@ function git-root() {
     cd `pwd`/`git rev-parse --show-cdup`
   fi
 }
+
+git config --global alias.delete-merged-branches '!git branch --merged | grep -v \* | xargs -I % git branch -d %'
