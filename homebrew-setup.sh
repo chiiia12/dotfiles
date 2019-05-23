@@ -42,6 +42,7 @@ quiver
 rbenv
 mysql
 source-highlight
+memcached
 )
 
 echo "Installing binaries..."
