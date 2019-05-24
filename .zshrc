@@ -2,6 +2,9 @@ bindkey -v
 [[ -d ~/.rbenv  ]] && \
 eval "$(direnv hook zsh)"
 eval "$(rbenv init -)"
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh
+
 # Sの情報を取得するzshの便利関数 vcs_infoを使う
 autoload -Uz vcs_info
 
@@ -97,3 +100,4 @@ function git-root() {
     cd `pwd`/`git rev-parse --show-cdup`
   fi
 }
+

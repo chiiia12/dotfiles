@@ -32,8 +32,9 @@ ln -s ~/dotfiles/.ideavimrc ~/.ideavimrc
 brew install zsh
 chsh -s /usr/local/bin/zsh
 
-# git config editorの設定
+# git config 
 git config --global core.editor vim
+git config --global alias.delete-merged-branches '!git branch --merged | grep -v \* | xargs -I % git branch -d %'
 
 # setting osx
 sh ./osx.sh

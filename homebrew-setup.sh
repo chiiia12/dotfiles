@@ -40,6 +40,7 @@ pinentry-mac
 maven
 quiver
 rbenv
+zsh-kubectl-prompt
 mysql
 source-highlight
 memcached
