@@ -44,6 +44,7 @@ zsh-kubectl-prompt
 mysql
 source-highlight
 memcached
+wget
 )
 
 echo "Installing binaries..."
