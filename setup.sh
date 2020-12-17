@@ -26,11 +26,6 @@ ln -s ~/dotfiles/.vim ~/.vim:
 ln -s ~/dotfiles/.tigrc ~/.tigrc
 ln -s ~/dotfiles/.ideavimrc ~/.ideavimrc
 
-# login shell
-# TODO unknown userと言われる
-# /etc/shellsに/usr/local/bin/zshを追加する（permission Error)
-brew install zsh
-chsh -s /usr/local/bin/zsh
 
 # git config 
 git config --global core.editor vim
@@ -38,14 +33,6 @@ git config --global alias.delete-merged-branches '!git branch --merged | grep -v
 
 # setting osx
 sh ./osx.sh
-
-# open app
-open -a "/Applications/Google Chrome.app/"
-open -a "/Applications/Caffeine.app/"
-open -a "/Applications/BetterTouchTool.app/"
-open -a "/Applications/iTerm.app"
-open -a "/Applications/Slack.app"
-open -a "/Applications/Alfred\ 3.app/"
-open -a "/Applications/HyperSwitch.app"
-
+sh ./homebrew-setup.sh 
+sh ./maapp-setup.sh
 

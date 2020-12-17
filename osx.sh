@@ -59,6 +59,11 @@ defaults write com.apple.finder ShowPathbar -bool true
 # 写真アプリ自動openをOFF
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 
+# Disable the CAPS LOCK key
+/usr/libexec/PlistBuddy -c "Add com.apple.keyboard.modifiermapping.1452-610-0 array" ~/Library/Preferences/ByHost/.GlobalPreferences.*.plist
+/usr/libexec/PlistBuddy -c "Add :com.apple.keyboard.modifiermapping.1452-610-0: dict" ~/Library/Preferences/ByHost/.GlobalPreferences.*.plist
+/usr/libexec/PlistBuddy -c "Add com.apple.keyboard.modifiermapping.1452-610-0:0:HIDKeyboardModifierMappingDst integer -1" ~/Library/Preferences/ByHost/.GlobalPreferences.*.plist
+/usr/libexec/PlistBuddy -c "Add com.apple.keyboard.modifiermapping.1452-610-0:0:HIDKeyboardModifierMappingSrc integer 0" ~/Library/Preferences/ByHost/.GlobalPreferences.*.plist
 
 # restart
 killall Dock

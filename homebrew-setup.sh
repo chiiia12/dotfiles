@@ -3,7 +3,7 @@
 # brew install
 if test ! $(which brew); then
 	echo "Installing homebrew..."
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 echo "Updating homebrew recipes..."
@@ -14,7 +14,7 @@ brew upgrade
 
 brew tap caskroom/cask
 brew tap homebrew/cask
-brew cask install java
+brew install --cask java
 
 binaries=(
 zsh
@@ -65,8 +65,6 @@ hyperswitch
 alfred
 virtualbox
 vagrant
-caffeine
-karabiner
 android-studio
 bartender
 istat-menus
@@ -74,13 +72,11 @@ react-native-debugger
 clipy
 goland
 jasper
-skype
 docker
 1password
 licecap
 atom
 intellij-idea-ce
-eqmac
 visual-studio-code
 reactotron
 )
@@ -89,7 +85,7 @@ reactotron
 echo "Installing apps..."
 for ((i = 0; i < ${#apps[@]}; i++)) {
   echo "Install ${aps[i]}"
-  brew cask install --appdir="/Applications" ${apps[i]}
+  brew install --cask --appdir="/Applications" ${apps[i]}
 }
 
 npmmodules=(
@@ -112,10 +108,10 @@ brew cleanup
 
 curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh
 gemapps=(
-cocoapods
-update_xcode_plugins
-rails
-spec
+ cocoapods
+ update_xcode_plugins
+ rails
+ spec
 )
 
 for ((i = 0; i < ${#gemapps[@]}; i++)) {
