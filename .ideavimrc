@@ -1,2 +1,4 @@
 nnoremap dd "_dd
 vnoremap dd "_dd
+set visualbell
+set noerrorbells
