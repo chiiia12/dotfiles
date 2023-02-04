@@ -20,30 +20,14 @@ binaries=(
 zsh
 zplug
 tig
-clang-format
-npm
 git
-ansible
-watchman
 mas
 nvm
 yarn
 go
-git-now
 gradle
-swiftlint
-postgresql
-ios-deploy
---HEAD libimobiledevice
-ideviceinstaller
-pinentry-mac
 maven
 quiver
-rbenv
-zsh-kubectl-prompt
-mysql
-source-highlight
-memcached
 wget
 )
 
@@ -63,22 +47,7 @@ bettertouchtool
 slack
 hyperswitch
 alfred
-virtualbox
-vagrant
 android-studio
-bartender
-istat-menus
-react-native-debugger
-clipy
-goland
-jasper
-docker
-1password
-licecap
-atom
-intellij-idea-ce
-visual-studio-code
-reactotron
 )
 
 
@@ -88,21 +57,21 @@ for ((i = 0; i < ${#apps[@]}; i++)) {
   brew install --cask --appdir="/Applications" ${apps[i]}
 }
 
-npmmodules=(
- react-native-cli
- react-devtools
- react-native-git-upgrade
- react-scripts
- puppeteer
- create-react-app
- typescript
-)
+# npmmodules=(
+#   react-native-cli
+#  react-devtools
+#  react-native-git-upgrade
+#  react-scripts
+#  puppeteer
+#  create-react-app
+#  typescript
+# )
 
-echo "Install npm modules..."
-for ((i = 0; i < ${#npmmodules[@]}; i++)) {
-  echo "Install ${aps[i]}"
-  npm install -g ${npmmodules[i]} 
-}
+# echo "Install npm modules..."
+# for ((i = 0; i < ${#npmmodules[@]}; i++)) {
+#   echo "Install ${aps[i]}"
+#   npm install -g ${npmmodules[i]} 
+# }
 
 brew cleanup
 
@@ -121,7 +90,7 @@ for ((i = 0; i < ${#gemapps[@]}; i++)) {
 update_xcode_plugins
 
 # for flutter
-pip install six
+# pip install six
 
 # install nodebrew
-curl https://raw.github.com/hokaccha/nodebrew/master/nodebrew | perl - setup
+# curl https://raw.github.com/hokaccha/nodebrew/master/nodebrew | perl - setup
